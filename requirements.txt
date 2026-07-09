@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+asyncpg
+pydantic-settings
+alembic
+bcrypt
+pyjwt
+pyotp
+qrcode[pil]
+email-validator
