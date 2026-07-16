@@ -19,8 +19,6 @@ async def get_db():
         except Exception:
             await session.rollback()
             raise
-
-
 async def connect_db():
     """Verifies DB connectivity. Schema is managed by Alembic migrations, not create_all."""
     async with engine.begin() as conn:

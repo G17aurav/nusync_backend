@@ -11,8 +11,6 @@ class LicenseGroup(Base):
     id = Column(Integer, primary_key=True)
     type = Column(LicenseTypeEnum, nullable=False)
     org_name = Column(String(255), nullable=False)
-    user_name = Column(String(255), nullable=False)  # buyer
-    email = Column(String(255), nullable=False)  # buyer
     max_seats = Column(Integer, nullable=False, server_default="1")
     bought_at = Column(Date)
     created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text("now()"))

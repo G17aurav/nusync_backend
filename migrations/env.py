@@ -11,8 +11,8 @@ from app.core.config import settings
 from app.db.connection import Base
 from app.models.admin import Admin  # noqa: F401
 from app.models.license_group import LicenseGroup  # noqa: F401
-from app.models.license_seat import LicenseSeat  # noqa: F401
-from app.models.lab_shared_file import LabSharedFile  # noqa: F401
+from app.models.generated_license import GeneratedLicense  # noqa: F401
+from app.models.user import User  # noqa: F401
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
